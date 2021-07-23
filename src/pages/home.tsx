@@ -40,7 +40,7 @@ const HomeComponent: React.FC<Props> = () => {
                         <tbody>
                             {store && store.posts && store.posts.map((x: any, i: number) =>
                                 <tr key={i}>
-                                    <td>{x.locationId.name}</td>
+                                    <td>{x.name}</td>
                                     <td>{x.name}</td>
                                 </tr>
                             )}
