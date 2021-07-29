@@ -45,7 +45,9 @@ export function testIPC(page: string) {
                 });
                 ipc.on('asynchronous-reply', (event: any, arg: any) => {
                     console.log(arg)
-                })
+                });
+
+                //this ipc renderer will send the signal to the ipcMain listener, mentioned in file electron.js
                 ipc.send("testIPC", [page]);
             }
             catch (error: any) {

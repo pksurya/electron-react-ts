@@ -14,6 +14,8 @@ type Props = {
 const HomeComponent: React.FC<Props> = () => {
     const store = useSelector((state: RootState) => state.post);
     const postService = useActions(PostService);
+
+    //Flag to chk whether the application is opened in browser or on any desktop/OS
     let elec = false;
     if (userAgent.indexOf(' electron/') > -1) {
         elec = true;
@@ -47,6 +49,7 @@ const HomeComponent: React.FC<Props> = () => {
 
                         </tbody>
                     </table>
+                    {/* This button will only be shown when opened on desktop */}
                     {elec &&
                         <button className="btn btn-primary" onClick={() => postService.testIPC("Home")}>Call IPC</button>
                     }

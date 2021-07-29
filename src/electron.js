@@ -6,6 +6,7 @@ const debug = require('electron-debug');
 debug();
 
 const createWindow = () => {
+  //Configuration for the windows UI for desktop version of react application
   const win = new BrowserWindow({
     width: 800,
     height: 500,
@@ -52,7 +53,7 @@ app.on('window-all-closed', () => {
 })
 
 
-
+//This ipcMAin listener will listen to the signals coming from the UI/client side and will perform their task, if it matches the event name
 ipcMain.on("testIPC", (event, arg) => {
   console.log("Some one calling me from page...", arg);
 });
