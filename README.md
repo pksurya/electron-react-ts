@@ -44,3 +44,8 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+### `npm install --global windows-build-tools or npm install --global --production windows-build-tools`
+
+If you get error node-sass, try to run above on windows, using powerhell in Administrator mode.
+npm config set python C:\Users\<USERNAME>\.windows-build-tools\python27\python.exe

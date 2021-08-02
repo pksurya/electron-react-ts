@@ -1,4 +1,4 @@
-import { CommonActionType } from "./common";
+import CommonActionType from "./common";
 
 export interface IPost {
   posts: any[];
@@ -17,7 +17,7 @@ export enum PostActions {
 }
 
 export type PostAction =
-  
+
   | CommonActionType<typeof PostActions.ADD_POST, any>
   | CommonActionType<typeof PostActions.ADD_POSTS, any>
   | CommonActionType<typeof PostActions.ADD_ALL_POSTS, any>

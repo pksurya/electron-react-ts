@@ -1,5 +1,5 @@
 import { Route, Switch } from "react-router-dom";
-import { HomeComponent, AboutComponent } from './pages';
+import { HomeComponent, AboutComponent } from '.';
 
 type Props = {}
 const Routes: React.FC<Props> = () => {

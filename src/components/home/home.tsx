@@ -1,11 +1,12 @@
 import * as React from "react";
 import { useSelector } from "react-redux";
 import { withRouter } from "react-router-dom";
-import { useActions } from "../actions";
-import WebLayout from "../components/common/layout";
-import { RootState } from "../reducers";
-import * as PostService from "../actions/post";
+import { useActions } from "../../redux/actions";
+import WebLayout from "../layout/layout";
+import { RootState } from "../../redux/reducers";
+import * as PostService from "../../redux/actions/post";
 import { useEffect } from "react";
+import styles from "./home.module.css";
 var userAgent = navigator.userAgent.toLowerCase();
 
 type Props = {
@@ -30,7 +31,7 @@ const HomeComponent: React.FC<Props> = () => {
                 <p>Welcome to Home page</p>
 
                 <div className="container">
-                    <h2>Location And Areas</h2>
+                    <h2 className={styles.h2}>Location And Areas</h2>
                     <p>CRUD operaion for Location and Area</p>
                     <table className="table table-bordered">
                         <thead>

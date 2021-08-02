@@ -1,4 +1,4 @@
-import { CommonActionType } from "./common";
+import  CommonActionType  from "./common";
 
 export interface Todo {
   id: number;

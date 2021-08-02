@@ -1,7 +1,7 @@
 import axios from "axios";
 //import axios from '../interceptor';
 import { PostActions } from "../model";
-import { constant } from "../constant";
+import { constant } from "../../constant";
 
 declare var window: any;
 
