@@ -49,3 +49,11 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 If you get error node-sass, try to run above on windows, using powerhell in Administrator mode.
 npm config set python C:\Users\<USERNAME>\.windows-build-tools\python27\python.exe
+
+
+For Error: "MSVSProject' object has no attribute 'items'"
+### run npm i --no-optional
+
+For Error: "No version of chokidar is available"
+### npm update --legacy-peer-deps
+or install chokidar in dev dependencies
